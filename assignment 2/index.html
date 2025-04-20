@@ -2,92 +2,373 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Community Skill Exchange Fair</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Community Skill Exchange Fairs</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Skill Exchange Fair</div>
+    <div class="logo">Local Community Skill Exchange Fairs</div>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Community</a></li>
-        <li><input type="search" placeholder="Search in site"/></li>
-      </ul>
+      <a href="#">Home</a>
+      <a href="#">Events</a>
+      <a href="#">Skills</a>
+      <a href="#">About</a>
     </nav>
+    <input type="text" class="search-box" placeholder="Search in site 🔍">
   </header>
 
   <section class="hero">
     <h1>Welcome to our Skill Exchange Fair</h1>
     <p>Join us to showcase and exchange skills with your community</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Join Now</button>
-    </form>
+    <input type="email" placeholder="Enter your email to receive updates" />
+    <br>
+    <button class="join-btn">Join Now</button>
   </section>
 
-  <section class="skills-preview">
-    <h2>Featured Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="images/gardening.jpg" alt="Gardening">
-        <h3>Gardening</h3>
-        <p>Expert Techniques and Tips</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/cooking.jpg" alt="Culinary">
-        <h3>Culinary</h3>
-        <p>Cooking Masterclass</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/diy.jpg" alt="Home Improvement">
-        <h3>DIY Home Improvement</h3>
-        <p>Live Demonstrations</p>
+  <section class="info-section">
+    <div class="info-left">
+      <div class="circle-avatar"></div>
+      <div class="info-text">
+        <h2>Community Skill Exchange</h2>
+        <div class="tags">
+          <span>Local</span>
+          <span>Community</span>
+          <span>Skills</span>
+        </div>
+        <p>Connecting community members through shared skills</p>
       </div>
     </div>
+    <button class="learn-btn">Learn More</button>
   </section>
 
-  <section class="workshops">
-    <h2>Sign Up for Workshops</h2>
-    <form>
-      <select>
-        <option>Gardening Workshop</option>
-        <option>Art Class</option>
-        <option>DIY Crafting</option>
-      </select>
-      <input type="email" placeholder="Enter your email" />
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <section class="community-tips">
+  <section class="tips">
     <h2>Community Tips</h2>
-    <div class="tips-grid">
-      <div class="tip">
+    <p>Learn from experienced community members</p>
+    <div class="tip-box"></div>
+  </section>
+  <section class="workshop-signup">
+  <h2>Sign Up for Workshops</h2>
+  <p>Choose the skills you want to learn</p>
+
+  <div class="form-container">
+    <div class="form-left">
+      <label>Select Workshop</label>
+      <div class="workshop-options">
+        <button>Gardening Workshop</button>
+        <button>Art Class</button>
+        <button>DIY Crafting</button>
+      </div>
+      <small>Limited spots available</small>
+    </div>
+
+    <div class="form-right">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" />
+      <small>We'll send you confirmation details</small>
+    </div>
+  </div>
+
+  <button class="submit-btn">Submit</button>
+</section>
+
+<section class="workshop-cards">
+  <div class="card">
+    <div class="card-img"></div>
+    <div class="card-content">
+      <h3>Successful Gardening</h3>
+      <p class="author">by Green Thumb Expert</p>
+      <p>Explore the secrets to a thriving garden</p>
+      <span class="tag">Gardening Tips</span>
+      <div class="card-footer">
+        <span class="avatar"></span> Alice Green
+        <span class="icons">🍽️ 🌿</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"></div>
+    <div class="card-content">
+      <h3>Creative Cooking</h3>
+      <p>Discover new recipes and cooking techniques</p>
+      <div class="card-footer">
+        <span class="avatar"></span> <strong>Chef Gordon</strong>
+        <span class="icons">🍽️ 🌿</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="featured-skills">
+  <div class="featured-header">
+    <div class="featured-img-placeholder"></div>
+    <div>
+      <h2>Featured Skills</h2>
+      <p>Explore the skills showcased by community members</p>
+    </div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="skill-tag">Gardening</span>
+      <div class="skill-img-placeholder">Skill illustration</div>
+      <div class="skill-info">
+        <p class="skill-title">Gardening Techniques</p>
+        <p class="skill-subtitle"><strong>Expert Tips</strong></p>
+        <p class="skill-icons">👩‍🌾 🌱 🛠️</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-tag">Culinary</span>
+      <div class="skill-img-placeholder">Skill illustration</div>
+      <div class="skill-info">
+        <p class="skill-title">Cooking Masterclass</p>
+        <p class="skill-subtitle"><strong>Interactive Demo</strong></p>
+        <p class="skill-icons">👩‍🌾 🌱 🛠️</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-tag">Home Improvement</span>
+      <div class="skill-img-placeholder">Skill illustration</div>
+      <div class="skill-info">
+        <p class="skill-title">DIY Home Repairs</p>
+        <p class="skill-subtitle"><strong>Live Demonstrations</strong></p>
+        <p class="skill-icons">👩‍🌾 🌱 🛠️</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="community-tips">
+  <h2>Community Tips</h2>
+  <p class="subtext">Learn from experienced community members</p>
+
+  <div class="tips-cards">
+    <div class="tip-card">
+      <div class="tip-thumbnail"></div>
+      <div class="tip-content">
         <h3>Successful Gardening</h3>
-        <p>by Alice Green</p>
+        <p class="tip-by">by Green Thumb Expert</p>
+        <p class="tip-desc">Explore the secrets to a thriving garden</p>
+        <span class="tip-tag">Gardening Tips</span>
+        <div class="tip-footer">
+          <div class="author-info">
+            <div class="author-avatar"></div>
+            <span>Alice Green</span>
+          </div>
+          <div class="tip-icons">🍽️ 🌿</div>
+        </div>
       </div>
-      <div class="tip">
+    </div>
+
+    <div class="tip-card">
+      <div class="tip-thumbnail"></div>
+      <div class="tip-content">
         <h3>Creative Cooking</h3>
-        <p>by Chef Gordon</p>
+        <p class="tip-desc">Discover new recipes and cooking techniques</p>
+        <div class="tip-footer">
+          <div class="author-info">
+            <div class="author-avatar"></div>
+            <span><strong>Chef Gordon</strong></span>
+          </div>
+          <div class="tip-icons">🍽️ 🌿</div>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section class="products">
-    <h2>Featured Products</h2>
-    <div class="product-card">
-      <img src="images/product1.jpg" alt="Product">
-      <h3>Classic Watch</h3>
-      <p>Price: $99</p>
+  </div>
+</section>
+<section class="skill-showcase">
+  <div class="showcase-header">
+    <div class="showcase-thumbnail"></div>
+    <div>
+      <h2>Skill Showcase</h2>
+      <p>See what skills your neighbors have to offer</p>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <p>Contact Us | Privacy Policy | Get Involved</p>
-  </footer>
+  <div class="skill-cards">
+    <div class="skill-card">
+      <div class="card-label free">Free</div>
+      <div class="card-image">Gardening tools</div>
+      <div class="card-content">
+        <h3>Gardening Workshop</h3>
+        <p><strong>Available slots:</strong> 10</p>
+        <div class="card-actions">👍 💬</div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="card-label paid">Paid</div>
+      <div class="card-image">Paint brushes</div>
+      <div class="card-content">
+        <h3>Art Class</h3>
+        <p><strong>Duration:</strong> 2 hours</p>
+        <div class="card-actions">👍 💬</div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="card-label free">Free</div>
+      <div class="card-image">DIY materials</div>
+      <div class="card-content">
+        <h3>DIY Crafting</h3>
+        <p><strong>Materials provided</strong></p>
+        <div class="card-actions">👍 💬</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="community-highlights">
+  <h2>Community Highlights</h2>
+  <p>See what your community members are sharing</p>
+
+  <div class="community-post">
+    <div class="post-header">
+      <div class="user-avatar"></div>
+      <div class="user-info">
+        <strong>Jane</strong>
+        <div class="timestamp">2 hours ago, Community Center</div>
+      </div>
+      <div class="more-options">⋯</div>
+    </div>
+
+    <div class="post-image">
+      <span>Excited faces</span>
+    </div>
+
+    <div class="post-content">
+      <p>Had a great time learning new skills today!</p>
+      <span class="hashtag">#CommunityEvents</span>
+      <div class="reactions">❤️ 📷</div>
+    </div>
+  </div>
+</section>
+<section class="featured-products">
+  <div class="featured-grid">
+    <div class="featured-main-image"></div>
+
+    <div class="featured-details">
+      <h2>Featured Products</h2>
+      <p>Check out our top picks</p>
+      <button class="view-more-btn">View More</button>
+
+      <div class="product-list">
+        <div class="product-card">
+          <span class="tag">New Arrival</span>
+          <div class="product-image">A stylish watch</div>
+          <div class="product-info">
+            <div>Classic Watch</div>
+            <div class="price">Price: <strong>$99</strong></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="tag">Best Seller</span>
+          <div class="product-image">Elegant necklace</div>
+          <div class="product-info">
+            <div>Diamond Necklace</div>
+            <div class="price">Price: <strong>$199</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="dashboard">
+  <div class="dashboard-header">
+    <h2>Sales Performance</h2>
+    <p>Analyze your business performance</p>
+    <button class="btn-dark">View Details</button>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <small>Total Revenue</small>
+      <h3>$10,000</h3>
+      <span class="stat-positive">+20%</span>
+    </div>
+    <div class="stat-box">
+      <small>Orders</small>
+      <h3>150</h3>
+      <span class="stat-negative">-10%</span>
+    </div>
+  </div>
+
+  <div class="chart-box">
+    <h4>Monthly Sales</h4>
+    <small>Revenue</small>
+    <div class="bar-chart">
+      <div class="bar" style="height: 70%"></div>
+      <div class="bar" style="height: 50%"></div>
+      <div class="bar" style="height: 35%"></div>
+      <div class="bar" style="height: 55%"></div>
+      <div class="bar" style="height: 40%"></div>
+      <div class="bar" style="height: 65%"></div>
+      <div class="bar" style="height: 50%"></div>
+    </div>
+    <div class="chart-footer">Months</div>
+  </div>
+</section>
+  <main class="container">
+    <section class="reviews">
+      <div class="section-left">
+        <h2>Customer Reviews</h2>
+        <p>See what our customers are saying</p>
+        <div class="review-cards">
+          <div class="review-card">
+            <div class="review-header">
+              <span class="avatar"></span>
+              <strong>Customer 1</strong>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>Great product, highly recommended!</p>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <span class="avatar"></span>
+              <strong>Customer 2</strong>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>Excellent service, will buy again!</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-right">
+        <div class="placeholder"></div>
+      </div>
+    </section>
+
+    <section class="recent-items">
+      <div class="recent-left">
+        <h2>Recent Items</h2>
+        <p>Your recently viewed items</p>
+      </div>
+      <div class="recent-list">
+        <div class="item">
+          <span class="emoji">😊</span>
+          <div>
+            <strong>Item 1</strong>
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="item">
+          <span class="emoji">😍</span>
+          <div>
+            <strong>Item 2</strong>
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="item">
+          <span class="emoji">👍</span>
+          <div>
+            <strong>Item 3</strong>
+            <p>Details</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
